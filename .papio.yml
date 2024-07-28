@@ -1,0 +1,26 @@
+# .papio.yml
+pipelines:
+  - name: "CI Pipeline"
+    stages:
+      - name: "Build"
+        jobs:
+          - name: "Build Job"
+            commands:
+              - "echo Building the project"
+              - "npm install"
+      - name: "Test"
+        jobs:
+          - name: "Test Job"
+            commands:
+              - "echo Running tests"
+              - "npm test"
+      - name: "Deploy"
+        jobs:
+          - name: "Deploy Job"
+            commands:
+              - "echo Deploying the project"
+              - "npm run deploy"
+
+notifications:
+  email:
+    - "your-email@example.com"
