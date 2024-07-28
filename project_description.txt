@@ -1,10 +1,12 @@
 Anonymous College Application Probability Calculator
-Introduction
+
 The Anonymous College Application Probability Calculator is a versatile tool designed to assist students worldwide in assessing their chances of being admitted to various colleges and universities. By leveraging machine learning, the application analyzes numerous factors related to a student's profile and provides a probability estimate of acceptance.
-Features
+
+Features:
 User-Friendly Interface
 The calculator features an easy-to-use interface where users can input their data. The application is designed to ensure anonymity, protecting user privacy.
 Diverse Input Parameters
+
 Users can provide a variety of data points, including:
 •	High School GPA
 •	National Exam Scores (like SAT, ACT, or country-specific tests)
@@ -24,22 +26,28 @@ Users can provide a variety of data points, including:
 •	Interview Details and Scores
 •	Credential Evaluation Scores
 •	Cultural Fit Scores
+
 Real-Time Predictions
 Once the data is inputted, the model generates a probability of admission, offering students immediate feedback on their strengths and areas for improvement.
+
 Privacy and Security
 No personally identifiable information is required, ensuring that all user data remains anonymous and secure.
+
 Adaptability
 The system is designed to be flexible, allowing it to be customized to fit the educational systems of different countries. This makes it a valuable tool for a global audience.
+
 Target Users
 This tool is intended for:
 •	High school students applying to colleges worldwide.
 •	Educational counselors and advisors.
 •	Researchers studying admission trends and probabilities.
+
 Technology Stack
 •	Frontend: Developed with Streamlit for a dynamic user experience.
 •	Backend: Built using Python to handle logic and data processing.
 •	Machine Learning: Utilizes TensorFlow to train and deploy the predictive model.
 •	Version Control: Managed with Git and GitHub for efficient collaboration and code management.
+
 Machine Learning Model
 Data Collection
 Historical admissions data and anonymized user inputs are collected to train the model.
@@ -51,6 +59,7 @@ Evaluation
 The model's performance is regularly evaluated to ensure accuracy and reliability.
 Deployment
 The trained model is integrated with the Streamlit application to provide real-time predictions.
+
 Conclusion
 The Anonymous College Application Probability Calculator aims to empower students globally by providing insights into their college admission chances. With its machine learning capabilities and adaptability to different educational systems, it offers a personalized and privacy-focused approach to understanding and improving admission probabilities.
 
