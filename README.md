@@ -6,14 +6,38 @@ A simple Streamlit app template for you to modify!
 
 ### How to run it on your own machine
 
-1. Install the requirements
+import streamlit as st
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+# Title
+st.title('Hello, Streamlit!')
 
-2. Run the app
+# Header
+st.header('This is a header')
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+# Subheader
+st.subheader('This is a subheader')
+
+# Text
+st.text('Hello, this is some text.')
+
+# Markdown
+st.markdown('### This is a markdown text')
+
+# Input fields
+name = st.text_input('Enter your name:')
+st.write(f'Hello, {name}!')
+
+number = st.number_input('Enter a number:')
+st.write(f'The number you entered is: {number}')
+
+# Button
+if st.button('Click me'):
+    st.write('Button clicked!')
+
+# Selectbox
+option = st.selectbox(
+    'Choose an option:',
+    ['Option 1', 'Option 2', 'Option 3']
+)
+st.write(f'You selected: {option}')
+
