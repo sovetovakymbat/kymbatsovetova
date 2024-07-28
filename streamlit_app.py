@@ -3,6 +3,16 @@ import pandas as pd
 import numpy as np
 import joblib
 
+# Import EmissionsTracker from codecarbon
+try:
+    from codecarbon import EmissionsTracker
+    tracker = EmissionsTracker()
+    tracker.start()
+    tracker_available = True
+except ImportError:
+    st.error("The 'codecarbon' library is not installed. Please install it by running 'pip install codecarbon'.")
+    tracker_available = False
+
 # Load the trained model
 model = joblib.load('admission_predictor_model.joblib')
 
@@ -68,3 +78,10 @@ if st.button('Predict'):
         st.success('The student is predicted to be admitted!')
     else:
         st.warning('The student is predicted to not be admitted.')
+
+    # Stop the emissions tracker and get the emissions data
+    if tracker_available:
+        emissions = tracker.stop()
+        st.write(f"This app is powered by green energy!")
+    else:
+        st.warning("Energy consumption and CO2 emissions data is not available because the 'codecarbon' library is not installed.")
